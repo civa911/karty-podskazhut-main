@@ -3,10 +3,24 @@
 *::after {
   box-sizing: border-box;
 }
+/* объявленеи переменных */
+:root {
+  --bg-color:#F3EFEC;
+  --text-color:#312A4E;
+  --accent-color:#FFAB6B;
+  --main-font:'Raleway';
+  --accent-font:'STIX Two Text' ;
 
+}
+
+/* Начало работы, шаг 2 */
 .page {
   min-inline-size: 360px;
   margin: 0;
+  background-color: var(--bg-color,#F3EFEC);
+  color: var(--text-color,#312A4E );
+  font-family: var(--main-font, 'Raleway');
+
 }
 
 p,
@@ -19,4 +33,28 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+/* Начало работы, шаг 2 */
+
+.heading {
+  font-family: var(--accent-font, 'STIX Two Text'); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.content-section {
+  padding-left: 5vi;
+  padding-right: 5vi;
+}
+.header {
+  padding-top: calc(10%);
+}
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 6.1728vw, 7.5rem);
+}
+.content__title {
+  margin-top: calc(100% - 93%);
+  margin-bottom: calc(2.5%);
 }
