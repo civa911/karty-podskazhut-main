@@ -57,4 +57,24 @@ figure {
 .content__title {
   margin-top: calc(100% - 93%);
   margin-bottom: calc(2.5%);
+  font-size: 30px;
+}
+.content__text-block {
+  font-family: var(--main-font, 18px);
+}
+.content__paragraph {
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: normal;
+  margin-bottom: 1.5em;
+}
+.content__paragraph__link {
+  color: var(--main-font);
+  box-shadow: 0 0 0 currentColor;
+}
+.content__blockquote {
+  font-family: var(--main-font);
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 1.5em;
 }
