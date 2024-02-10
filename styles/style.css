@@ -15,11 +15,11 @@
 
 /* Начало работы, шаг 2 */
 .page {
-  min-inline-size: 360px;
   margin: 0;
-  background-color: var(--bg-color,#F3EFEC);
   color: var(--text-color,#312A4E );
   font-family: var(--main-font, 'Raleway');
+  background-color: var(--bg-color,#F3EFEC);
+  min-inline-size: 360px;
 
 }
 
@@ -37,16 +37,16 @@ figure {
 
 /* Начало работы, шаг 2 */
 
-.heading {
-  font-family: var(--accent-font, 'STIX Two Text'); 
+.heading { 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-family: var(--accent-font, 'STIX Two Text');
 
 }
 .content-section {
-  padding-left: 5vi;
   padding-right: 5vi;
+  padding-left: 5vi;
 }
 .header {
   padding-top: calc(10%);
@@ -61,20 +61,68 @@ figure {
 }
 .content__text-block {
   font-family: var(--main-font, 18px);
+
 }
 .content__paragraph {
-  font-size: 18px;
+  margin-bottom: 1.5em;
   font-family: var(--main-font);
   font-weight: normal;
-  margin-bottom: 1.5em;
+  font-size: 18px;
+  
 }
 .content__paragraph__link {
-  color: var(--main-font);
   box-shadow: 0 0 0 currentColor;
+  color: var(--main-font);
 }
 .content__blockquote {
-  font-family: var(--main-font);
-  font-style: italic;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  align-content: center;
   margin-bottom: 1.5em;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: italic;
+  inline-size: 75%;
+}
+blockquote {
+  display: flex;
+  align-items: center;
+ justify-content: center; 
+}
+.content__list {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  margin-bottom: 10px;
+}
+li:last-child {
+ margin-bottom: 0;
+}
+.content__list li {
+  position: relative;
+}
+.content__list li::before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/marker-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-block-start: -7.5px;
+  inset-block-start: 50%;
+  inset-inline-start: -25px;
+  inline-size: 15px;
+  block-size: 15px; 
+}
+.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter{
+  background-color:var(--accent-color);
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 1px;
+  font-weight: bold;
+  font-size: x-large;
 }
