@@ -221,18 +221,28 @@ li:last-child {
 /* состояние кнопок и ссылок */
 .header__theme-button:hover,
 .content__paragraph__link:hover {
-  text-decoration: underline rgb(49, 42, 78, 0.5);
-  
-  
+  text-decoration: underline rgb(49, 42, 78, 0.5); 
 }
-
 .header__theme-button:focus-visible,
 .content__paragraph__link:focus-visible{
   border: 1px solid var(--text-color);
 }
-
 /* .header__theme-button, 
 .content__paragraph__link {
   outline: none;
 } */
 /* состояние кнопок и ссылок */
+
+/* подвал сайта */
+.footer__copyright {
+  font-family: var(--main-font);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(10%) ;
+  padding: 2.5%;
+  border-top: 1px solid var(--text-color);
+}
+
+/* подвал сайта */
