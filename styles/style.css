@@ -90,8 +90,8 @@ button:disabled {
 }
 .content__paragraph__link {
   box-shadow: 0 0 0 currentColor;
-  color: var(--main-font);
   outline: none;
+  color: var(--main-font);
 }
 .content__paragraph__link:hover {
   text-decoration: underline rgb(49, 42, 78, 0.5);
@@ -107,8 +107,8 @@ button:disabled {
   font-family: var(--main-font);
   font-size: 18px;
   font-style: italic;
-  inline-size: 75%;
   line-height: 200%;
+  inline-size: 75%;
 }
 blockquote {
   display: flex;
